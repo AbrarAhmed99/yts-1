@@ -9,7 +9,7 @@ module Yts
     def movie_list(*p)
       str = []
       p.each{|x| str << x}
-      resp = HTTParty.get "https://yts.to/api/v2/list_movies.json?#{str.*','.gsub(',','&')}"
+      resp = HTTParty.get "https://ytsto.xyz/api/v2/list_movies.json?#{str.*','.gsub(',','&')}"
       resp['data']['movies']
     end
 
@@ -22,9 +22,9 @@ module Yts
         str = []
         p.each{|x| str << x}
           if str.empty?
-            resp = HTTParty.get "https://yts.to/api/v2/#{i}.json?movie_id=#{movie_id}"
+            resp = HTTParty.get "https://ytsto.xyz/api/v2/#{i}.json?movie_id=#{movie_id}"
           else
-            resp = HTTParty.get "https://yts.to/api/v2/#{i}.json?movie_id=#{movie_id}&#{str.*','.gsub(',','&')}"
+            resp = HTTParty.get "https://ytsto.xyz/api/v2/#{i}.json?movie_id=#{movie_id}&#{str.*','.gsub(',','&')}"
           end
         OpenStruct.new(resp['data'])
       end
