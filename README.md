@@ -17,34 +17,34 @@ And then execute:
 ## Usage
 
 List movies:<br>
-https://yts.to/api#list_movies
+https://ytsto.xyz/#list_movies
 
     $ Yts.list_movies(params)
     $ Yts.list_movies('quality=3D','limit=10')
 
 Movie details:<br>
-https://yts.to/api#movie_details
+https://ytsto.xyz/api#movie_details
 
     $Yts.movie_details(movie_id)
     $Yts.movie_details(movie_id).title
     
 Movie suggestions:<br>
-https://yts.to/api#movie_suggestions
+https://ytsto.xyz/api#movie_suggestions
 
     $Yts.movie_suggestions(movie_id)
 
 Movie comments:<br>
-https://yts.to/api#movie_comments
+https://ytsto.xyz/api#movie_comments
 
     $Yts.movie_comments(movie_id)
     
 Movie reviews:<br>
-https://yts.to/api#movie_reviews
+https://ytsto.xyz/api#movie_reviews
 
     $Yts.movie_reviews(movie_id)
 
 Movie parental guides:
-https://yts.to/api#movie_parental_guides
+https://ytsto.xyz/api#movie_parental_guides
 
     $Yts.movie_parental_guides(movie_id)
     
